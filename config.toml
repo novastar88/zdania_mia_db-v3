@@ -1,0 +1,34 @@
+deepl_api_key = ""
+logs_folder = ""
+main_dir = ""
+# 0 - none, 1 - priority, 2 - frequency
+sentence_rating_mode = 2
+used_priority_list = "random_words"
+used_frequency_list = 7
+note_type_max_bonus = 3
+
+[postgres]
+user = ""
+pass = ""
+port = ""
+db_name = "miadb"
+
+[jp_config]
+minimal_morphs = 4
+max_morphs = 19
+add_translation_on_export = true
+translation_lang = "PL"
+
+[en_config]
+minimal_words = 8
+max_words = 25
+
+[paths]
+media_storage_folder = ''
+apkg_recznie = ''
+
+[logging]
+format_console = "<level>{level}</level> | <green>{time:DD.MM.YYYY HH:mm:ss}</green> | <cyan>{file}:{function}</cyan> - <magenta>{message}</magenta>"
+format_file = "<level>{level}</level> | <green>{time:DD.MM.YYYY HH:mm:ss}</green> | <cyan>{function}</cyan> - <magenta>{message}</magenta>"
+level_console = "TRACE"
+level_file = "TRACE"
